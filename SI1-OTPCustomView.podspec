@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SI1-OTPCustomView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SI1-OTPCustomView.'
+  s.summary          = 'What a amazing OTPView SI1-OTPCustomView.'
 
   s.description      = <<-DESC
   # This description is used to generate tags and improve search results.
@@ -24,11 +24,12 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'SI-Du' => 'du.bv@neo-lab.vn' }
   s.source           = { :git => 'https://github.com/SI-Du/SI1-OTPCustomView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://twitter.com/dubydu'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SI1-OTPCustomView/Classes/**/*'
+  s.swift_versions = ['3.2', '4.0', '4.2', '5.0']
   
   # s.resource_bundles = {
   #   'SI1-OTPCustomView' => ['SI1-OTPCustomView/Assets/*.png']
