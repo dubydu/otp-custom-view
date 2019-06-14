@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		3A3DBABA61CD3CE6CF29E18B4D7CC541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		559BCA97AC6B71C360EC0C7D09B2EB93 /* Pods-SI1-OTPCustomView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C2FBC4B26EC64A002C9CCF64BDF34D /* Pods-SI1-OTPCustomView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81D8C90522B397FF006A262D /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8C90422B397FF006A262D /* OTPTextField.swift */; };
-		81D8C90622B397FF006A262D /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8C90422B397FF006A262D /* OTPTextField.swift */; };
 		81D8C90722B39802006A262D /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDB9A4AF353A59C7A4732B1A8D86C3 /* OTPView.swift */; };
+		81D8C90922B39895006A262D /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8C90822B39894006A262D /* OTPTextField.swift */; };
+		81D8C90A22B39895006A262D /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D8C90822B39894006A262D /* OTPTextField.swift */; };
 		92E23DC95CB014098BB5E01169BC79DB /* SI1-OTPCustomView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00724798CAA0398B5CC28EB92E8D359C /* SI1-OTPCustomView-dummy.m */; };
 		9DEB6E65350CCBF37A0D6DF4639240AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9FA504F36378C71E762C6C6EAB41D0C1 /* SI1-OTPCustomView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F90D72A8A74EC4E7A4DE17317E47CC85 /* SI1-OTPCustomView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,7 +60,7 @@
 		74ECC7D8FC99D9615967EDA1A6ABF5A8 /* Pods-SI1-OTPCustomView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SI1-OTPCustomView_Tests.modulemap"; sourceTree = "<group>"; };
 		80F159EE7C8904C56585752538379868 /* Pods-SI1-OTPCustomView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SI1-OTPCustomView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		81B6927793E64D3E6D445AA1368B00E2 /* Pods_SI1_OTPCustomView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SI1_OTPCustomView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81D8C90422B397FF006A262D /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		81D8C90822B39894006A262D /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPTextField.swift; path = "SI1-OTPCustomView/Classes/OTPTextField.swift"; sourceTree = "<group>"; };
 		9A704EE28DFAF03BBB88ECBDC4AE1B0E /* Pods-SI1-OTPCustomView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SI1-OTPCustomView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AADDB9A4AF353A59C7A4732B1A8D86C3 /* OTPView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OTPView.swift; path = "SI1-OTPCustomView/Classes/OTPView.swift"; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				AADDB9A4AF353A59C7A4732B1A8D86C3 /* OTPView.swift */,
+				81D8C90822B39894006A262D /* OTPTextField.swift */,
 				7825F291E304A7902153929FD096A075 /* Pod */,
 				BC5489AA0FCC935CA53EAB5B026C5C33 /* Support Files */,
-				81D8C90422B397FF006A262D /* OTPTextField.swift */,
 			);
 			name = "SI1-OTPCustomView";
 			path = ../..;
@@ -384,7 +384,7 @@
 			files = (
 				D90F4CCC4DD392BEF679AF912E809D87 /* OTPView.swift in Sources */,
 				92E23DC95CB014098BB5E01169BC79DB /* SI1-OTPCustomView-dummy.m in Sources */,
-				81D8C90622B397FF006A262D /* OTPTextField.swift in Sources */,
+				81D8C90A22B39895006A262D /* OTPTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF021E57198470F933BE41BC19D15E42 /* Pods-SI1-OTPCustomView_Example-dummy.m in Sources */,
-				81D8C90522B397FF006A262D /* OTPTextField.swift in Sources */,
 				81D8C90722B39802006A262D /* OTPView.swift in Sources */,
+				81D8C90922B39895006A262D /* OTPTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
