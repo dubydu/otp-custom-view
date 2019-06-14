@@ -1,0 +1,16 @@
+PODS:
+  - SI1-OTPCustomView (0.1.0)
+
+DEPENDENCIES:
+  - SI1-OTPCustomView (from `../`)
+
+EXTERNAL SOURCES:
+  SI1-OTPCustomView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SI1-OTPCustomView: 798742d4715b7f8386638add1a3597b68c8b25af
+
+PODFILE CHECKSUM: e1db15cf84a5aa570a20a9b27bf4ad4e7daf33a8
+
+COCOAPODS: 1.7.1
