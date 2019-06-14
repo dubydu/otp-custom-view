@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SI1-OTPCustomView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SI1_OTPCustomView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,11 +18,42 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pex-Od-XvN">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxL-ZK-KlH" customClass="OTPView" customModule="SI1_OTPCustomView">
+                                        <rect key="frame" x="30" y="100" width="283" height="50"/>
+                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0PA-3t-4he"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="gxL-ZK-KlH" firstAttribute="centerX" secondItem="pex-Od-XvN" secondAttribute="centerX" id="PiZ-D6-OuN"/>
+                                    <constraint firstItem="gxL-ZK-KlH" firstAttribute="top" secondItem="pex-Od-XvN" secondAttribute="top" constant="100" id="Ttj-qA-V53"/>
+                                    <constraint firstAttribute="trailing" secondItem="gxL-ZK-KlH" secondAttribute="trailing" constant="30" id="gbd-ih-lKO"/>
+                                    <constraint firstItem="gxL-ZK-KlH" firstAttribute="leading" secondItem="pex-Od-XvN" secondAttribute="leading" constant="30" id="pkC-XI-JTK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pex-Od-XvN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="0EX-5e-lF4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pex-Od-XvN" secondAttribute="bottom" id="N2U-nn-70v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pex-Od-XvN" secondAttribute="trailing" id="q0i-1r-RJv"/>
+                            <constraint firstItem="pex-Od-XvN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="zpg-by-c8f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="otpView" destination="gxL-ZK-KlH" id="UAK-yp-RIr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

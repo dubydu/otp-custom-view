@@ -7,18 +7,43 @@
 //
 
 import UIKit
+import SI1_OTPCustomView
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - IBOutlet
+    @IBOutlet weak var otpView: OTPView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        configurationOTPView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func configurationOTPView() {
+        otpView.delegate = self
+        otpView.otpFieldsCount = 5
+        otpView.otpFieldType = .corner
+        otpView.otpFieldCornerRadius = 4
+        otpView.otpFieldDefaultBorderColor = UIColor.gray
+        otpView.initView()
     }
-
 }
-
+// MARK: - OTPViewDelegate
+extension ViewController: OTPViewDelegate {
+    func shouldBecomeFirstResponder(fieldIndex index: Int) -> Bool {
+        return true
+    }
+    
+    func enteredOTP(otpString: String) {
+        print("Your otp's \(otpString)")
+    }
+    
+    func hasEnteredAllOTP(hasEntered: Bool) -> Bool {
+        print(hasEntered)
+        return hasEntered
+    }
+}
