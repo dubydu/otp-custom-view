@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SI1-OTPCustomView_Example' do
+  pod 'SI1-OTPCustomView', :path => '../'
+
+  target 'SI1-OTPCustomView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
