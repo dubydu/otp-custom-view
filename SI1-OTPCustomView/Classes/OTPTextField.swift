@@ -69,5 +69,3 @@ class OTPTextField: UITextField {
         layer.addSublayer(shapeLayer)
     }
 }
-
-
