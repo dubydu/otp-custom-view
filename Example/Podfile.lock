@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SI1-OTPCustomView: 798742d4715b7f8386638add1a3597b68c8b25af
+  SI1-OTPCustomView: bd43f08c7c4d45bca85b5deb4cfed333daac4d97
 
 PODFILE CHECKSUM: e1db15cf84a5aa570a20a9b27bf4ad4e7daf33a8
 
