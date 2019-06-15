@@ -21,8 +21,9 @@ pod 'SI1-OTPCustomView'
 ```
 
 ## Screen Shot
-
-![alt text](https://github.com/SI-Du/SI1-OTPCustomView/blob/master/Simulator%20Screen%20Shot.png)
+<br>
+<img height="700" src="https://github.com/SI-Du/SI1-OTPCustomView/blob/master/Simulator%20Screen%20Shot.png" />
+<br>
 
 ## Custom OTP view
 
@@ -66,7 +67,7 @@ pod 'SI1-OTPCustomView'
 
 ## Author
 
-SI-Du, du.bv@neo-lab.vn
+SI1, du.bv@neo-lab.vn
 
 ## License
 
