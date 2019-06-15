@@ -25,8 +25,53 @@ pod 'SI1-OTPCustomView'
 <img height="600" src="https://github.com/SI-Du/SI1-OTPCustomView/blob/master/Simulator%20Screen%20Shot.png" />
 <br>
 
+## Usage
+
 ## Custom OTP view
 
+### Get started
+Import the library where you want to use it. Create a `OTPView` object, init it to your `views`. Otherwise, you have also create a `IBOutlet` and init it in your storyboard or xib file.
+
+
+```swift
+import SI1_OTPCustomView
+
+// ...
+let otpView = OTPView()
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    otpView = OTPView(frame: CGRect(x: 0, y: 0, width: 45, height: 250))
+}
+```
+
+### Example Configuration
+
+
+#### Coding style tests
+```
+class ViewController: UIViewController {
+    
+    // MARK: - IBOutlet
+    @IBOutlet weak var otpView: OTPView!
+    
+    //...
+
+    func configurationOTPView() {
+        otpView.delegate = self
+        otpView.otpFieldsCount = 6
+        otpView.otpFieldType = .corner
+        otpView.otpFieldCornerRadius = 4
+        otpView.otpFieldSize = 40
+        otpView.otpFieldSeparatorSpace = 5
+        otpView.otpFieldDefaultBorderColor = UIColor.gray
+        otpView.initView()
+    }
+}
+
+```
+### Customization
+```
 - otpFieldType  // Defines the otp type, defaults is circular
 
 - otpFieldsCount  // Defines the otp count, defaults is 5
@@ -64,6 +109,8 @@ pod 'SI1-OTPCustomView'
 - shouldAllowIntermediateEditing  // If set “false”, editing will take place from last filled text field, defaults is true
 
 - shouldRequireCursor  // If set “false”, the blinking cursor for otp will not be visible , defaults is true
+
+```
 
 ## Author
 
