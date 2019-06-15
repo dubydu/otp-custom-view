@@ -22,7 +22,7 @@ pod 'SI1-OTPCustomView'
 
 ## Screen Shot
 <br>
-<img height="700" src="https://github.com/SI-Du/SI1-OTPCustomView/blob/master/Simulator%20Screen%20Shot.png" />
+<img height="600" src="https://github.com/SI-Du/SI1-OTPCustomView/blob/master/Simulator%20Screen%20Shot.png" />
 <br>
 
 ## Custom OTP view
