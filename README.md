@@ -27,8 +27,6 @@ pod 'SI1-OTPCustomView'
 
 ## Usage
 
-## Custom OTP view
-
 ### Get started
 Import the library where you want to use it. Create a `OTPView` object, init it to your `views`. Otherwise, you have also create a `IBOutlet` and init it in your storyboard or xib file.
 
@@ -46,9 +44,6 @@ override func viewDidLoad() {
 ```
 
 ### Example Configuration
-
-
-#### Coding style tests
 ```
 class ViewController: UIViewController {
     
