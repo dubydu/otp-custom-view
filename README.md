@@ -20,6 +20,10 @@ it, simply add the following line to your Podfile:
 pod 'SI1-OTPCustomView'
 ```
 
+## Screen Shot
+
+![alt text](https://github.com/SI-Du/SI1-OTPCustomView/blob/master/Simulator%20Screen%20Shot.png)
+
 ## Custom OTP view
 
 - otpFieldType  // Defines the otp type, defaults is circular
