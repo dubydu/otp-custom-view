@@ -34,7 +34,6 @@ open class OTPView: UIView {
     open var otpFieldType: OTPType = .circular
     public var otpFieldsCount: Int = 5
     public var otpFieldInputType: KeyboardType = .numberPad
-    public var otpFieldColor: UIColor = .black
     public var otpFieldFont: UIFont = UIFont.systemFont(ofSize: 20)
     public var otpFieldEntrySecureType: Bool = false
     public var otpFilledEntryDisplay: Bool = false

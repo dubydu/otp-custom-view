@@ -25,9 +25,11 @@ class ViewController: UIViewController {
 
     func configurationOTPView() {
         otpView.delegate = self
-        otpView.otpFieldsCount = 5
+        otpView.otpFieldsCount = 6
         otpView.otpFieldType = .corner
         otpView.otpFieldCornerRadius = 4
+        otpView.otpFieldSize = 30
+        otpView.otpFieldSeparatorSpace = 5
         otpView.otpFieldDefaultBorderColor = UIColor.gray
         otpView.initView()
     }
