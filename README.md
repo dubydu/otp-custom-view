@@ -67,7 +67,7 @@ pod 'SI1-OTPCustomView'
 
 ## Author
 
-SI1, du.bv@neo-lab.vn
+SI1 Team - du.bv@neo-lab.vn
 
 ## License
 
