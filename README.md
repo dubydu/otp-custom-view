@@ -35,7 +35,7 @@ Import the library where you want to use it. Create a `OTPView` object, init it 
 import SI1_OTPCustomView
 
 // ...
-let otpView = OTPView()
+let otpView: OTPView!
 
 override func viewDidLoad() {
     super.viewDidLoad()
